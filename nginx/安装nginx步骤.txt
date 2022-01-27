@@ -1,0 +1,20 @@
+yum -y install gcc-c++  
+yum -y install pcre-devel
+yum -y install zlib-devel
+yum -y install openssl openssl-devel
+
+解压缩
+tar -zxvf nginx-1.12.0.tar.gz
+
+进入源码目录
+cd  nginx-1.12.0
+以此安装如下顺序：
+./configure
+make  
+make install
+
+启动nginx
+cd /usr/local/nginx/sbin
+./nginx
+
+访问你的公网IP即可
